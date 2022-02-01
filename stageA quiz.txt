@@ -1,0 +1,15 @@
+work = pd.read_csv(url, sep=',', encoding='latin-1')
+
+work
+
+work.describe()
+
+work.isnull().sum()
+
+work.groupby("Y2014").sum()
+work.groupby("Y2015").sum()
+work.groupby("Y2016").sum()
+work.groupby("Y2017").sum()
+work.groupby("Y2018").sum()
+
+work['Area'].nunique()
